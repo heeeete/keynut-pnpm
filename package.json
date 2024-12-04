@@ -1,5 +1,25 @@
 {
   "name": "keynut-monorepo",
   "packageManager": "yarn@4.5.3",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  },
+  "scripts": {
+    "dev": "yarn workspaces foreach --all --parallel --interlaced run dev",
+    "build": "yarn workspaces foreach --all --parallel --interlaced run build",
+    "start": "yarn workspaces foreach --all --parallel --interlaced run start",
+    "fix": "yarn dlx @yarnpkg/sdks vscode",
+    "ts": "tsc --noEmit"
+  }
 }
