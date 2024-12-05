@@ -1,6 +1,7 @@
 {
   "name": "keynut-monorepo",
   "private": true,
+  "packageManager": "pnpm@9.14.4",
   "devDependencies": {
     "@eslint/js": "^9.16.0",
     "eslint": "^9.16.0",
