@@ -1,6 +1,5 @@
 {
   "name": "@keynut/ui",
-  "packageManager": "yarn@4.5.3",
   "private": true,
   "exports": {
     ".": "./index.ts"

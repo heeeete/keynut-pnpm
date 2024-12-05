@@ -1,9 +1,5 @@
 'use client';
 
 export const Button = () => {
-  return (
-    <button onClick={() => alert(`Haasdasdsdasdasdellasdasdo from your app!`)}>
-      butotototonasdjklasdjklasjdklasjdkl
-    </button>
-  );
+  return <button onClick={() => alert(`Hello World!`)}>BUTTON/</button>;
 };
